@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Pratik15 {
+    public static void main(String[] args) {
+        int tekSayiToplam = 0;
+        int ciftDortSToplam = 0;
+
+        Scanner input = new Scanner(System.in);
+        int k = 0;
+
+        while (k >= 0) {
+            System.out.print("Bir sayı giriniz (Çıkış için -1): ");
+            k = input.nextInt();
+
+            if (k % 2 == 1) {
+                tekSayiToplam += k;
+            } else if (k % 4 == 0) {
+                ciftDortSToplam += k;
+            }
+        }
+
+        System.out.println("Tek sayıların toplamı: " + tekSayiToplam);
+        System.out.println("Çift ve 4'ün katı olan sayıların toplamı: " + ciftDortSToplam);
+    }
+}
